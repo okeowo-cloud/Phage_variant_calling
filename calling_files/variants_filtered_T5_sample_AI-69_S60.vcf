@@ -1,7 +1,7 @@
 ##fileformat=VCFv4.2
 ##FILTER=<ID=PASS,Description="All filters passed">
 ##bcftoolsVersion=1.16+htslib-1.16
-##bcftoolsCommand=mpileup -Ou -f data/reference/T5_sequence.fasta mapped_sorted/T5_AI-72_S63_sorted.bam
+##bcftoolsCommand=mpileup -Ou -f data/reference/T5_sequence.fasta mapped_sorted/sorted_T5_sample_AI-69_S60.bam
 ##reference=file://data/reference/T5_sequence.fasta
 ##contig=<ID=T5,length=113951>
 ##ALT=<ID=*,Description="Represents allele(s) other than observed.">
@@ -26,9 +26,9 @@
 ##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
 ##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
 ##bcftools_callVersion=1.16+htslib-1.16
-##bcftools_callCommand=call -Ou -mv --ploidy 1; Date=Sun Jan 22 13:45:07 2023
+##bcftools_callCommand=call -Ou -mv --ploidy 1; Date=Tue Jan 24 08:50:34 2023
 ##bcftools_filterVersion=1.16+htslib-1.16
-##bcftools_filterCommand=filter -s LowQual; Date=Sun Jan 22 13:45:12 2023
-#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	mapped_sorted/T5_AI-72_S63_sorted.bam
-T5	57885	.	A	G	225.417	PASS	DP=245;VDB=0.631127;SGB=-0.693147;MQSBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=0,0,205,38;MQ=60	GT:PL	1:255,0
-T5	65930	.	A	G	225.417	PASS	DP=243;VDB=0.945791;SGB=-0.693147;MQSBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=0,0,179,62;MQ=60	GT:PL	1:255,0
+##bcftools_filterCommand=filter -s LowQual; Date=Tue Jan 24 08:50:38 2023
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	mapped_sorted/sorted_T5_sample_AI-69_S60.bam
+T5	57822	.	G	A	225.417	PASS	DP=246;VDB=0.300749;SGB=-0.693147;MQSBZ=0;FS=0;MQ0F=0;AC=1;AN=1;DP4=0,0,204,42;MQ=60	GT:PL	1:255,0
+T5	65803	.	GTT	GT	228.407	PASS	INDEL;IDV=210;IMF=0.857143;DP=245;VDB=0.000252054;SGB=-0.693147;RPBZ=-1.35302;MQBZ=0;MQSBZ=0;BQBZ=-2.63452;NMBZ=-8.3261;SCBZ=-6.06244;FS=0;MQ0F=0;AC=1;AN=1;DP4=4,0,172,38;MQ=60	GT:PL	1:255,0
